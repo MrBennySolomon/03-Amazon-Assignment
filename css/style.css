@@ -11,7 +11,7 @@ html, body {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,22 +45,36 @@ html {
 }
 .container-bought-together,
 .container-explore {
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    height: 50vh;
     width: 90%;
     border: 2px solid black;
+    overflow: hidden;
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-MyAmazonProduct/style.css at main · SuperSpawn/MyAmazonProduct
+
+
+.card {
+  width: 8rem;
+  height: 90%;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2);
+  width: 7rem;
+}
+
+.card:hover {
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
+}
+
+#image {
+  width: 7rem;
+  height: 7rem;
+  background: url(../img/pic.jpg) no-repeat center center/cover;
+}
+
+.left-arrow,
+.right-arrow {
+  
+}
