@@ -1,17 +1,6 @@
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-  font-size: 62.5%;
-}
-
 body {
     width: 100vw;
-    height: 150vh;
+    height: 200vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,10 +12,44 @@ html {
 }
 
 .navbar-container {
-    height: 10vh;
-    width: 90%;
+    height: 12vh;
+    width: 100%;
     border: 2px solid black;
 
+}
+
+.navbar-bottom {
+  width: 100%;
+  height: 5vh;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 7vh;
+  background: #211913;
+}
+
+.sprite {
+	background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -218px -337px;
+	width: 41px;
+	height: 28px;
+}
+
+.ruller-container {
+  height: 10vh;
+  width: 100%;
+  border: 2px solid black;
+
+}
+
+.ruller-1,
+.ruller-2 {
+  width: 100%;
+  height: 5vh;
 }
 
 .main-container {
@@ -39,12 +62,12 @@ html {
     height: 70vh;
 }
 .main-container div {
-    width: 30%;
+    width: 33%;
     height: 100%;
     border: 2px solid black;
 }
 .container-bought-together,
-.container-explore {
+.container-also-viewed {
     display: flex;
     justify-content: center;
     align-items: center;
