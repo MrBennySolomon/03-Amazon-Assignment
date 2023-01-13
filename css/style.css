@@ -220,12 +220,10 @@ ul li a{
 .main-container .left {
     width: 20%;
     height: 100%;
-    border: 2px solid black;
 }
 .main-container .middle {
   width: 50%;
   height: 100%;
-  border: 2px solid black;
 }
 .main-container .right {
   width: 20%;
@@ -294,6 +292,15 @@ ul li a{
   font-size: 1.4rem;
 }
 
+.container-bought-together-bottom {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    height: 8vh;
+    width: 82%;
+}
 .container-bought-together {
   display: flex;
     justify-content: center;
@@ -302,7 +309,6 @@ ul li a{
 
     height: 20vh;
     width: 82%;
-    border: 2px solid black;
     overflow: hidden;
 }
 
@@ -319,6 +325,14 @@ ul li a{
   border: none;
   padding: 0.8rem;
   border-radius: 1.5rem;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .container-also-viewed {
