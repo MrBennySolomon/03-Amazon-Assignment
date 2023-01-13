@@ -190,7 +190,7 @@ ul li a{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 65vh;
 }
 
 .main-container .left a {
@@ -292,6 +292,33 @@ ul li a{
 
 .par {
   font-size: 1.4rem;
+}
+
+.container-bought-together {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    height: 20vh;
+    width: 82%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.container-bought-together .heading {
+  font-size: 2.3rem;
+}
+
+.together-total {
+  font-size: 1.6rem;
+}
+
+.yellow-background {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
 }
 
 .container-also-viewed {
