@@ -190,7 +190,7 @@ ul li a{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
 }
 
 .main-container .left a {
@@ -241,13 +241,59 @@ ul li a{
   font-size: 1.5rem;
 }
 
-.btn-left,
-.btn-right {
+.btn-left {
+  border: 1px solid rgb(86, 89, 89);
   background-color: white;
-  padding: 0.5rem;
 }
 
-.container-bought-together,
+.btn-left:hover {
+  background-color: lightgray;
+}
+
+.btn-right {
+  border: 1px solid rgb(254, 164, 28);
+  background-color: rgb(254, 248, 242);
+}
+
+.btn-left,
+.btn-right {
+  cursor: pointer;
+  padding: 0.8rem;
+  padding-right: 5rem;
+}
+
+#span-gray {
+  color: rgb(86, 89, 89);
+}
+
+.aqua {
+  color: rgb(20, 124, 143);
+}
+
+.red {
+  color: rgb(177, 39, 4);
+  font-weight: bold;
+}
+
+.yellow {
+  color: rgb(255, 164, 28);
+}
+
+.middle a {
+  text-decoration: none;
+}
+
+.buttons-text button {
+  font-size: 1.2rem;
+  color: rgb(86, 89, 89);
+  background-color: white;
+  border: none;
+}
+
+.par {
+  font-size: 1.4rem;
+}
+
 .container-also-viewed {
     display: flex;
     justify-content: center;
@@ -255,7 +301,7 @@ ul li a{
     gap: 4rem;
 
     height: 50vh;
-    width: 90%;
+    width: 82%;
     border: 2px solid black;
     overflow: hidden;
 }
