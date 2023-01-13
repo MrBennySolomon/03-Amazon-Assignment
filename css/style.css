@@ -210,23 +210,43 @@ ul li a{
 }
 
 #big {
-  width: 35rem;
+  width: 30rem;
 }
 
 .img {
   display: block;
 }
 
-#small-1,
-#small-2 {
-
-}
-
-.main-container div {
-    width: 33%;
+.main-container .left {
+    width: 20%;
     height: 100%;
     border: 2px solid black;
 }
+.main-container .middle {
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+}
+.main-container .right {
+  width: 20%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.main-container .middle {
+  font-size: 2.8rem;
+}
+
+.author {
+  font-size: 1.5rem;
+}
+
+.btn-left,
+.btn-right {
+  background-color: white;
+  padding: 0.5rem;
+}
+
 .container-bought-together,
 .container-also-viewed {
     display: flex;
