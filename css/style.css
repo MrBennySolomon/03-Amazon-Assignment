@@ -221,14 +221,35 @@ ul li a{
     width: 20%;
     height: 100%;
 }
+
+button.add {
+  background-color: rgb(255, 216, 20);
+  margin: 0 auto;
+  display: block;
+  padding: 0.6rem 5rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+button.buy {
+  background-color: rgb(255, 164, 28);
+  margin: 0 auto;
+  display: block;
+  padding: 0.6rem 5.8rem;
+  border-radius: 2rem;
+  border: none;
+}
+
 .main-container .middle {
   width: 50%;
   height: 100%;
 }
 .main-container .right {
-  width: 20%;
+  width: 16%;
   height: 100%;
-  border: 2px solid black;
+  border: 4px solid lightgray;
+  border-radius: 1rem;
 }
 
 .main-container .middle {
@@ -277,6 +298,10 @@ ul li a{
   color: rgb(255, 164, 28);
 }
 
+.green {
+  color: rgb(0, 118, 0);
+}
+
 .middle a {
   text-decoration: none;
 }
@@ -286,6 +311,14 @@ ul li a{
   color: rgb(86, 89, 89);
   background-color: white;
   border: none;
+}
+
+.little {
+  font-size: 1.2rem;
+}
+
+.regular {
+  font-size: 1.8rem;
 }
 
 .par {
