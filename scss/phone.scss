@@ -1,3 +1,5 @@
+@import 'variables';
+
 $navbar-dark-color: rgb(35, 47, 62);
 $navbar-light-color: rgb(55, 71, 90);
 $light-grey: rgb(247, 248, 248);
@@ -29,7 +31,6 @@ body {
   @extend %flex;
   width: 100%;
   height: 5.2vh;
-  border: 2px solid black;
   background-color: $navbar-dark-color;
   overflow: hidden;
   justify-content: space-between;
@@ -58,7 +59,6 @@ body {
   @extend %flex;
   width: 100%;
   height: 5.2vh;
-  border: 2px solid black;
   background-color: $navbar-dark-color;
   overflow: hidden;
 
@@ -76,7 +76,6 @@ body {
   justify-content: flex-start;
   width: 100%;
   height: 5.2vh;
-  border: 2px solid black;
   background-color: $navbar-light-color;
   color: white;
   overflow: hidden;
@@ -97,7 +96,6 @@ body {
   @extend %flex;
   width: 100%;
   height: 5.2vh;
-  border: 2px solid black;
   background-color: $light-grey;
   overflow: hidden;
   justify-content: flex-start;
@@ -120,13 +118,58 @@ body {
     }
   }
 }
+.text-up {
+  @extend %flex;
+  height: 2vh;
+  width: 100%;
+  justify-content: flex-end;
 
+  label {
+    font-size: 1.1rem;
+    margin-right: 20px
+  }
+}  
 .text {
   @extend %flex;
   width: 100%;
   height: 16vh;
-  border: 2px solid black;
   overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .text-down {
+    @extend %flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+    flex-direction: column;
+
+    .author {
+      font-size: 1.5rem;
+      color: $aqua
+    }
+
+    .title-up,
+    .title-down {
+      font-size: 1.7rem;
+      font-weight: bold
+    }
+
+    .rating-stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('/assets/images/sprites_rating.png') no-repeat -2px -22px;
+      width: 80px;
+      height: 15px;
+    }
+
+    .book {
+      color: $aqua;
+      font-size: 1.4rem
+    }
+  }
 }
 
 .big-image {
@@ -134,7 +177,6 @@ body {
   align-items: flex-start;
   width: 100%;
   height: 47vh;
-  border: 2px solid black;
   overflow: hidden;
 
   img {
@@ -146,14 +188,57 @@ body {
   @extend %flex;
   width: 100%;
   height: 10vh;
-  border: 2px solid black;
   overflow: hidden;
+
+  .left {
+    background-color: white;
+    padding: 16px 50px;
+    border: 1px solid $dark-grey;
+
+    &-3 {
+
+    }
+
+    .bold-1 {
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+
+    .yellow {
+      color: $light-yellow;
+    }
+
+    .bold-2 {
+      font-weight: bold;
+    }
+  }
+
+  .right {
+    padding: 23px 70px;
+    border: 3px solid $dark-yellow;
+
+    &-1 {
+      font-weight: bold;
+    }
+
+    &-2 {
+      font-weight: bold;
+      color: $red;
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .shop {
   @extend %flex;
   width: 100%;
   height: 5.2vh;
-  border: 2px solid black;
   overflow: hidden;
+  justify-content: flex-start;
+
+  label {
+    margin-left: 20px;
+    color: $aqua;
+    font-size: 1.4rem;
+  }
 }
