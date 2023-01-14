@@ -12,52 +12,92 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/top_part.css">
 
   <script src="https://kit.fontawesome.com/fa98044e1d.js" crossorigin="anonymous"></script>
 
   <title>03-Amazon-Assignment</title>
 </head>
 <body>
-  <div class="navbar-container">
-     <nav class="navbar-top">
-      <div class="sprite-logo"></div>
-      <div class="sprite-location"></div>
-      <div class="location-info"> 
-        <div class="location-text">
-          <span class="location-span-top">Deliver to</span>
-        <span class="location-span-bottom">Israel</span>
+  <header>
+    <nav class="navbar">
+        <div class="nav-left ">
+            <div class="logo white-hover-border">
+                <div class="logo-image-navbar"></div>
+            </div>
+            <div class="delivery white-hover-border">
+                <img src="/assets/images/location.png" alt="L" class="location-icon">
+                <div class="location-text">
+                    <span class="deliver-to-text">Deliver to</span>
+                    <div class="country-text">Israel</div>
+                </div>
+            </div>
         </div>
-      </div>
-        <select class="search-bar-left">
-            <option value="Books">Books</option>
-        </select>
-      <input type="text" class="search-bar">
-
-      <div class="sprite-cart">
-        <span class="cart-items">0</span>
-      </div>
-     </nav>
-     <nav class="navbar-bottom">
-      <div class="navbar-bottom-left">
-        <ul>
-          <li><a href="#">All</a></li>
-          <li><a href="#">Today's Deals</a></li>
-          <li><a href="#">Customer Service</a></li>
-          <li><a href="#">Registry</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">Sell</a></li>
-        </ul>
-      </div>
-      <div class="navbar-bottom-right">
-        <ul>
-          <li><a href="#">Shop deals in Electronics</a></li>
-        </ul>
-      </div>
-      <div class="navbar-bottom-right">
-
-      </div>
-     </nav>
-  </div>
+        
+        <div class="search-container">
+            <div class="search-wrapper">
+                <div class="select-container">
+                    <input class="navbar-search-input" type="text">
+                    <input class="background-search-input" type="text">
+                    <div class="overlay"></div>
+                    <select value="volvo" class="nav-search-dropdown" data-nav-selected="0" name="category-drop"
+                        id="category-drop">
+                        <option value="volvo">&nbsp;&nbsp;All </option>
+                        <option value="volvo">Saab Lorem ipsum dolor sit.</option>
+                        <option value="volvo">Opel</option>
+                        <option value="volvo">Audi</option>
+                    </select>
+                    <div class="sort-down-icon-container">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="submit-magi-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="language white-hover-border">
+                <img style="width: 20px; height :14px; margin-top: 2px;" src="/assets/images/usa.jpg" alt="usa">
+                <div class="language-text">EN
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="sign-in white-hover-border">
+                <span>Hello, sign in</span>
+                <div class="account-list-text">
+                    <span>Account & Lists</span>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="return-and-order white-hover-border">
+                <span>Returns</span>
+                <span class="bold-style">& Orders</span>
+            </div>
+            <div class="cart white-hover-border">
+                <span class="number-of-items">0</span>
+                <div class="cart-image">
+                </div>
+                <span class="bold-style cart-text">Cart</span>
+            </div>
+        </div>
+    </nav>
+    <div class="bottom-navbar">
+        <div class="bottom-navbar-left">
+            <div class="left-item-one white-hover-border padding-link-bot-nav">
+                <div class="hamburger"></div>
+                <span>All</span>
+            </div>
+            <div class="left-item-two white-hover-border padding-link-bot-nav">Today's Deals</div>
+            <div class="left-item-three white-hover-border padding-link-bot-nav">Customer Service</div>
+            <div class="left-item-four white-hover-border padding-link-bot-nav">Registry</div>
+            <div class="left-item-five white-hover-border padding-link-bot-nav">Gift Cards</div>
+            <div class="left-item-six white-hover-border padding-link-bot-nav">Sell</div>
+        </div>
+        <span class="bottom-navbar-right white-hover-border padding-link-bot-nav">Shop deals in Electronics</span>
+    </div>
+</header>
   <div class="ruller-container">
     <div class="ruller-1">
       <ul>
@@ -92,11 +132,7 @@
         <p>JavaScript: Programming Basics for Absolute Beginners (Step-By-Step JavaScript) <span id="span-grey" class="grey"> Paperback - August 16, 2017</span></p>
         <p class="author">by <a class="aqua" href="#">Nathan Clark</a><span>(Author)</span></p>
         <p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <div class="rating-stars"></div>
           <span class="author aqua">123 rating</span>
           <span class="author">4.0 on Goodreads 41 ratings</span>
           <p class="author aqua">Book 1 of 3: Step-By-Step JavaScript</p>

@@ -65,7 +65,11 @@ width: 7rem;
 }
 
 .search-bar {
-  padding: 1.5rem 50rem;
+  padding: 1.5rem 10rem;
+}
+
+.search-btn {
+  width: 2rem;
 }
 
 .sprite-cart {
@@ -190,7 +194,7 @@ ul li a{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 70vh;
 }
 
 .main-container .left a {
@@ -245,6 +249,13 @@ button.buy {
   width: 50%;
   height: 100%;
 }
+
+.rating-stars {
+  background: url('/assets/images/sprites_rating.png') no-repeat -2px -22px;
+	width: 80px;
+	height: 15px;
+}
+
 .main-container .right {
   width: 16%;
   height: 100%;
@@ -374,7 +385,7 @@ label {
     align-items: center;
     gap: 2rem;
 
-    height: 50vh;
+    height: 65vh;
     width: 82%;
     overflow: hidden;
 }

@@ -8,3 +8,11 @@
 *::after{
   box-sizing: border-box;
 }
+
+ul{
+  list-style: none;
+}
+
+.links{
+  cursor: pointer;
+}
