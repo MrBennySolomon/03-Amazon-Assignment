@@ -14,7 +14,7 @@ body {
   font-size: 62.5%;
   width: 100vw;
   height: 100hv;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   flex-direction: column; }
 
 .cart {
