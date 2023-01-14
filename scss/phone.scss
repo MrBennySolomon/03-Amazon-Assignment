@@ -32,7 +32,7 @@ body {
   border: 2px solid black;
   background-color: $navbar-dark-color;
   overflow: hidden;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   .sprite-hamburger {
     background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -136px -255px;
@@ -46,6 +46,12 @@ body {
     width: 76px;
     height: 23px;
   }
+
+  .sprite-cart {
+    background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -340px;
+    width: 38px;
+    height: 26px;
+  }
 }
 
 .navbar {
@@ -55,6 +61,14 @@ body {
   border: 2px solid black;
   background-color: $navbar-dark-color;
   overflow: hidden;
+
+  input[type="text"] {
+    padding: 15px 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 95vw;
+    height: 90;
+  }
 }
 
 .deliver {
@@ -86,6 +100,25 @@ body {
   border: 2px solid black;
   background-color: $light-grey;
   overflow: hidden;
+  justify-content: flex-start;
+
+  img {
+    width: 35px;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-left: 15px;
+    
+    &.down {
+      color: red;
+
+      label {
+        color: red;
+        font-size: large
+      }
+    }
+  }
 }
 
 .text {
