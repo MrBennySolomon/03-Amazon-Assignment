@@ -258,6 +258,9 @@ button.buy {
 }
 
 .rating-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url('/assets/images/sprites_rating.png') no-repeat -2px -22px;
 	width: 80px;
 	height: 15px;
