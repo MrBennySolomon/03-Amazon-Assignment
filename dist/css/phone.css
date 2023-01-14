@@ -161,3 +161,15 @@ body {
     margin-left: 20px;
     color: #147c8f;
     font-size: 1.4rem; }
+
+
+@media (max-width: 760px) {
+  header,
+  .ruller-container,
+    .main-container,
+    .container-bought-together,
+    .container-bought-together-bottom,
+    .container-also-viewed{
+    display: none;
+  }
+}
