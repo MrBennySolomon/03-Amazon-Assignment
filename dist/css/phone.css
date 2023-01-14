@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 html,
-body, .cart, .navbar, .deliver, .prime, .text-up, .text, .text .text-down, .big-image, .phone-buttons, .shop {
+.cart, .navbar, .deliver, .prime, .text-up, .text, .text .text-down, .big-image, .phone-buttons, .shop {
   display: flex;
   justify-content: center;
   align-items: center; }

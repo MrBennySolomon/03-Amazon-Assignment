@@ -324,4 +324,7 @@ body {
           .shop{
           display: none;
         }
+        body {
+          justify-content: flex-start;
+        }
       }
