@@ -1,0 +1,468 @@
+@import 'variables';
+
+html {
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 160vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.navbar-container {
+  height: 12vh;
+  width: 100%;
+
+  .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    width: 100%;
+    height: 7vh;
+    background: rgb(19, 25, 33);
+  
+    overflow: hidden;
+    .location-info {
+      height: 50%;
+      width: 7rem;
+    }
+    .location-span-top,
+    .location-span-bottom {
+      color: white;
+    }
+
+    .location-span-top {
+      font-size: 1.2rem;
+    }
+
+    .location-span-bottom {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .sprite-location {
+      background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -71px -306px;
+      width: 17px;
+      height: 20px;
+    }
+
+    .search-bar-left {
+      padding: 1.6rem;
+      background-color: #f3f3f3;
+      border-top-left-radius: 1.2rem;
+      border-bottom-left-radius: 1.2rem;
+    }
+
+    .search-bar {
+      padding: 1.5rem 10rem;
+    }
+
+    .search-btn {
+      width: 2rem;
+    }
+
+    .sprite-cart {
+      background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -218px -337px;
+      width: 41px;
+      height: 28px;
+    }
+
+    .cart-items {
+      color: rgb(255, 164, 28);
+      font-size: 1.8rem;
+      padding: 1.8rem;
+    }
+
+    .sprite-logo {
+      background: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -51px;
+      width: 96px;
+      height: 29px;
+    }
+  }
+
+  .navbar-bottom {
+    width: 100%;
+    height: 5vh;
+    background-color: $navbar-bottom;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    overflow: hidden;
+
+    ul li a {
+      padding: 0.8rem;
+    }
+    
+    ul li a:hover{
+      border: 2px solid white;
+    }
+    
+    &-right ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    &-left ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    &-left ul li {
+      margin: auto 1.5rem;
+    }
+    
+    &-left ul,
+    &-right ul {
+    
+      margin: 2rem;
+      padding: 2rem;
+    
+      list-style: none;
+      font-size: 1.5rem;
+    }
+    
+    ul li a{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.ruller-container {
+  height: 10vh;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .ruller-1 {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin: auto 1.5rem;
+
+        a {
+          color: black;
+          font-size: 1.2rem;
+          padding: 1rem;
+
+          &:hover {
+            color: rgb(255, 164, 28);
+            border-bottom: 2px solid rgb(255, 164, 28);
+          }
+        }
+      }
+    }
+  }
+
+  .ruller-2 {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+.main-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+
+  #span-gray {
+    color: $dark-grey;
+  }
+  
+  .aqua {
+    color: $aqua;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+
+  .red {
+    color: $red;
+  }
+  
+  .yellow {
+    color: $dark-yellow;
+  }
+  
+  .green {
+    color: $green;
+  }
+
+  .author {
+    font-size: 1.5rem;
+  }
+
+  .left {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    font-size: 1.2rem;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    #big {
+      width: 30rem;
+    }
+    
+    .img {
+      display: block;
+    }
+  }
+
+  .little {
+    font-size: 1.2rem;
+  }
+  
+  .regular {
+    font-size: 1.8rem;
+  }
+  
+  .par {
+    font-size: 1.4rem;
+  }
+
+  .middle {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 2.8rem;
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      cursor: pointer;
+      padding: 0.8rem;
+      padding-right: 5rem;
+
+      &-left {
+        border: 1px solid rgb(86, 89, 89);
+        background-color: white;
+        cursor: pointer;
+        padding: 0.8rem;
+        padding-right: 5rem;
+        
+        &:hover {
+          background-color: lightgray;
+        }
+      }
+  
+      &-right {
+        border: 1px solid $dark-yellow;
+        background-color: $light-light-grey;
+        cursor: pointer;
+        padding: 0.8rem;
+        padding-right: 5rem;
+      }
+    }
+
+    .rating-stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('/assets/images/sprites_rating.png') no-repeat -2px -22px;
+      width: 80px;
+      height: 15px;
+    }
+
+    .buttons-text {
+      button {
+        font-size: 1.2rem;
+        color: $light-grey;
+        background-color: $white;
+        border: none;
+      }
+    } 
+
+
+  }
+
+  .right {
+    width: 16%;
+    height: 100%;
+    border: 4px solid $light-grey;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+
+    button.add {
+      background-color: $light-yellow;
+      margin: 0 auto;
+      display: block;
+      padding: 0.6rem 5rem;
+      margin-bottom: 1rem;
+      border-radius: 2rem;
+      border: none;
+    }
+    
+    button.buy {
+      background-color: rgb(255, 164, 28);
+      margin: 0 auto;
+      display: block;
+      padding: 0.6rem 5.8rem;
+      border-radius: 2rem;
+      border: none;
+    }
+  }
+}
+
+.container-bought-together {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 20vh;
+  width: 82%;
+  overflow: hidden;
+  font-size: 1.6rem;
+
+  .yellow-background {
+    background-color: $light-yellow;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+  }
+
+  .red {
+    color: $red;
+    font-weight: bold;
+  }
+  
+  label {
+    font-size: 1.4rem;
+  }
+
+  .together-total {
+    font-size: 1.6rem;
+  }
+
+  .heading {
+    font-size: 2.3rem;
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 8vh;
+    width: 82%;
+    overflow: hidden;
+    font-size: 1.4rem;
+    .bold {
+      font-weight: bold;
+    }
+
+    .red {
+      color: $red;
+      font-weight: bold;
+    }
+
+    .aqua {
+      color: $aqua;
+    }
+  }
+}
+
+.container-also-viewed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 65vh;
+  width: 82%;
+  overflow: hidden;
+
+  .card {
+    width: 15%;
+    height: 90%;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+    .container {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
+    }
+
+    #image1 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-1.jpg) no-repeat center center/cover;
+    }
+
+    #image2 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-2.jpg) no-repeat center center/cover;
+    }
+
+    #image3 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-3.jpg) no-repeat center center/cover;
+    }
+
+    #image4 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-4.jpg) no-repeat center center/cover;
+    }
+
+    #image5 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-5.jpg) no-repeat center center/cover;
+    }
+
+    #image6 {
+      width: 100%;
+      height: 50%;
+      background: url(/img/also-viewed/also-viewed-6.jpg) no-repeat center center/cover;
+    }
+  }
+}
